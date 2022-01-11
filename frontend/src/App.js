@@ -10,7 +10,7 @@ import CartScreen from "./screens/CartScreen";
 import Navbar from "./components/Navbar";
 import Backdrop from "./components/Backdrop";
 import SideDrawer from "./components/SideDrawer";
-//Navigation bar
+
 function App() {
     const[sideToggle,setSideToggle]=useState(false);
     return (

@@ -38,11 +38,42 @@
     flex: 1;
     padding: 1rem;
     text-decoration: none;
-    color:cadetblue;
-    font-size:1.6rem;
+    color: cadetblue;
+    font-size: 1.6rem;
 
 }
-.sidedrawer__links > li > :hover{
+
+.sidedrawer__links > li > :hover {
     background: steelblue;
     color: white;
+}
+
+.sidedrawer__links > li > span {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.sidedrawer__cartbadge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: cadetblue;
+    color: white;
+    font-size: 1rem;
+
+}
+
+.sidedrawer__links > li > :hover .sidedrawer__cartbadge {
+    background: white;
+    color: black;
+}
+@media (min-width: 960px) {
+    .sidedrawer{
+        display: none;
+    }
 }

@@ -38,13 +38,13 @@
     flex: 1;
     padding: 1rem;
     text-decoration: none;
-    color: cadetblue;
+    color: #CD2626;
     font-size: 1.6rem;
 
 }
 
 .sidedrawer__links > li > :hover {
-    background: steelblue;
+    background: cadetblue;
     color: white;
 }
 
@@ -62,7 +62,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: cadetblue;
+    background:#CD2626;
     color: white;
     font-size: 1rem;
 

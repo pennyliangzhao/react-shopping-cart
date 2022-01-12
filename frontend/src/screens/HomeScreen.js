@@ -1,4 +1,5 @@
 import "./HomeScreen.css";
+import homescreenimage from './homescreenimage.jpg';
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -7,6 +8,7 @@ import Product from "../components/Product";
 
 //Actions
 import { getProducts as listProducts } from "../redux/actions/productActions";
+import logo from "../components/logo.png";
 
 const HomeScreen = () => {
     const dispatch = useDispatch();
@@ -20,6 +22,9 @@ const HomeScreen = () => {
 
     return (
         <div className="homescreen">
+            <div className="homescreen__image">
+                <img src={homescreenimage} alt="homescreenimage"/>
+            </div>
             <h2 className="homescreen__title">Latest Products</h2>
             <div className="homescreen__products">
                 {loading ? (

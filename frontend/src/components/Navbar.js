@@ -1,6 +1,8 @@
 import './Navbar.css';
+import logo from './logo.png';
 import {Link} from 'react-router-dom';
 import {useSelector} from "react-redux";
+
 
 const Navbar = ({click}) => {
     const cart = useSelector(state => state.cart);
@@ -11,9 +13,13 @@ const Navbar = ({click}) => {
     return (
         <nav className="navbar">
 
-            <div className="navbar__logo">
-                <h2>MERN Shopping Cart</h2>
-            </div>
+                <Link className="navbar__image" to="/">
+                    <img src={logo} alt="logo"/>
+                </Link>
+
+            <Link className="navbar__logo" to="/">
+                <h2>Liverpool FC Store</h2>
+            </Link>
 
             <ul className="navbar__links">
                 <li>

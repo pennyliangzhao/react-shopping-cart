@@ -1,7 +1,7 @@
 .navbar {
     width: 100%;
     height: 110px;
-    background-color: cadetblue;
+    background-color: #CD2626;
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -13,6 +13,13 @@
     color: white;
     font-size: 1.4rem;
     cursor: pointer;
+    margin-left: -400px;
+
+}
+.navbar__image {
+    display: flex;
+    height: 110px;
+    margin-top:-25px;
 }
 
 .navbar__links {
@@ -40,13 +47,13 @@
 }
 
 .cart__link {
-    background: steelblue;
+    background: #CD2626;
     padding: 10px;
     border-radius: 8px;
 }
 
 .cart__link:hover {
-    background: yellowgreen;
+    background: cadetblue;
     color: white;
 }
 
@@ -81,7 +88,7 @@
 }
 
 .hamburger_menu:hover > div {
-    background: yellowgreen;
+    background: cadetblue;
 }
 
 
@@ -93,10 +100,15 @@
     .hamburger_menu {
         display: flex;
     }
+    .navbar__logo h2{
+        margin:auto;
+    }
 }
 
 @media (max-width: 500px) {
     .navbar__logo h2 {
         font-size: 1rem;
+        margin:auto;
     }
+
 }
